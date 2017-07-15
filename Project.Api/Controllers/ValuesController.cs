@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Project.Infrastructure;
 
 namespace Project.Api.Controllers
 {
@@ -13,7 +14,7 @@ namespace Project.Api.Controllers
         [HttpGet]
         public IEnumerable<string> Get()
         {
-            return new string[] { "value1", "value2" };
+            return new string[] {"value" };
         }
 
         // GET api/values/5

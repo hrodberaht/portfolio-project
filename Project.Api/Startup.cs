@@ -7,6 +7,9 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using Project.Core.Repositiores;
+using Project.Infrastructure.Repositiores;
+using Project.Infrastructure.Services;
 
 namespace Project.Api
 {
@@ -28,6 +31,8 @@ namespace Project.Api
         public void ConfigureServices(IServiceCollection services)
         {
             // Add framework services.
+            services.AddScoped<IProductRepositiores, ProductRepositiores>();
+            services.AddScoped<IProductServices, ProductService>();
             services.AddMvc();
         }
 
