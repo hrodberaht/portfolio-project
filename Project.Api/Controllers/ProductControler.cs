@@ -25,7 +25,7 @@ namespace Project.Api.Controllers
         //     return "Hello";
         // }
         public string Get(int id){
-           return _productService.Get(id);
+           return "id:" + _productService.Get(id);
         }
     }
     

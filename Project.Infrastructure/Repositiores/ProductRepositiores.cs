@@ -15,7 +15,7 @@ namespace Project.Infrastructure.Repositiores
 
         public string Get(int id)
         {
-            return "Hello from repiositiores " + id;
+            return id.ToString();
         }
 
         public Product Get(string name)
