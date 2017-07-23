@@ -5,7 +5,7 @@ using Project.Infrastructure.DTO;
 
 namespace Project.Infrastructure.Services
 {
-    public class ProductService : IProductServices
+    public class ProductService : IProductService
     {
         private readonly IProductRepositiores _productRepositiory;
         public ProductService(IProductRepositiores productRepository)

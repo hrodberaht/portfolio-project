@@ -1,8 +1,6 @@
-using Project.Infrastructure.DTO;
-
 namespace Project.Infrastructure.Services
 {
-    public interface IProductServices
+    public interface IProductService
     {
          string Get(int id);
     }

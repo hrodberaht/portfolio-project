@@ -32,7 +32,9 @@ namespace Project.Api
         {
             // Add framework services.
             services.AddScoped<IProductRepositiores, ProductRepositiores>();
-            services.AddScoped<IProductServices, ProductService>();
+            services.AddScoped<IProductService, ProductService>();
+            services.AddScoped<IUserRepositiores, UserRepositiores>();
+            services.AddScoped<IUserService, UserService>();
             services.AddMvc();
         }
 

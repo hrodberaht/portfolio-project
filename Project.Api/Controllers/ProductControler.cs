@@ -12,8 +12,8 @@ namespace Project.Api.Controllers
     [Route("[controller]")]
     public class ProductController : Controller
     {
-        private readonly IProductServices _productService;
-        public ProductController(IProductServices productService)
+        private readonly IProductService _productService;
+        public ProductController(IProductService productService)
         {
             _productService = productService;
         }
