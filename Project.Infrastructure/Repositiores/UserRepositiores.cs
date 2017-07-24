@@ -10,6 +10,7 @@ namespace Project.Infrastructure.Repositiores
     {
         private static ISet<User> UserList = new HashSet<User>{
             new User("user1@email.com", "user1"),
+            new User("user2@email.com", "user2"),
         };
         public void Add(User user)
         {
